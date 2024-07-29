@@ -11,6 +11,7 @@
 		201D83552C577EE500FDF89D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201D83542C577EE500FDF89D /* ContentView.swift */; };
 		201D83572C577EE700FDF89D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 201D83562C577EE700FDF89D /* Assets.xcassets */; };
 		201D835A2C577EE700FDF89D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 201D83592C577EE700FDF89D /* Preview Assets.xcassets */; };
+		201D83692C57802600FDF89D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201D83682C57802600FDF89D /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		201D83542C577EE500FDF89D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		201D83562C577EE700FDF89D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		201D83592C577EE700FDF89D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		201D83682C57802600FDF89D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,11 @@
 		201D83512C577EE500FDF89D /* Messenger */ = {
 			isa = PBXGroup;
 			children = (
-				201D83522C577EE500FDF89D /* MessengerApp.swift */,
-				201D83542C577EE500FDF89D /* ContentView.swift */,
+				201D83642C577FCD00FDF89D /* App */,
+				201D83632C577FCB00FDF89D /* Core */,
+				201D83622C577FC900FDF89D /* Extensions */,
+				201D83612C577FC300FDF89D /* Model */,
+				201D83602C577FB500FDF89D /* Service */,
 				201D83562C577EE700FDF89D /* Assets.xcassets */,
 				201D83582C577EE700FDF89D /* Preview Content */,
 			);
@@ -65,6 +70,68 @@
 				201D83592C577EE700FDF89D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		201D83602C577FB500FDF89D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		201D83612C577FC300FDF89D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		201D83622C577FC900FDF89D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		201D83632C577FCB00FDF89D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				201D83652C57800200FDF89D /* Authentication */,
+				201D83662C57800C00FDF89D /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		201D83642C577FCD00FDF89D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				201D83522C577EE500FDF89D /* MessengerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		201D83652C57800200FDF89D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				201D83672C57801700FDF89D /* View */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		201D83662C57800C00FDF89D /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				201D83542C577EE500FDF89D /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		201D83672C57801700FDF89D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				201D83682C57802600FDF89D /* LoginView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				201D83692C57802600FDF89D /* LoginView.swift in Sources */,
 				201D83552C577EE500FDF89D /* ContentView.swift in Sources */,
 				201D83532C577EE500FDF89D /* MessengerApp.swift in Sources */,
 			);
