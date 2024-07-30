@@ -49,7 +49,7 @@ struct RegistrationView: View {
             }
             
             Button {
-                print("Handle log in")
+                print("Handle Sign Up")
             } label: {
                 Text("Sign Up")
                     .font(.subheadline)
