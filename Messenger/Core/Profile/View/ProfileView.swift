@@ -13,6 +13,8 @@ struct ProfileView: View {
     
     @StateObject var viewModel = ProfileViewModel()
     
+    let user: User
+    
     var body: some View {
         VStack {
             //header
@@ -25,14 +27,15 @@ struct ProfileView: View {
                             .frame(width: 80, height: 80)
                             .clipShape(Circle())
                     } else {
-                        Image(systemName: "person.circle.fill")
+                        Image(user.profileImageURL ?? "")
                             .resizable()
+                            .scaledToFill()
                             .frame(width: 80, height: 80)
-                            .foregroundStyle(Color(.systemGray4))
+                            .clipShape(Circle())
                     }
                 }
                 
-                Text("Name")
+                Text(user.fullname)
                     .font(.title2)
                     .fontWeight(.semibold)
             }
@@ -69,5 +72,5 @@ struct ProfileView: View {
 }
 
 #Preview {
-    ProfileView()
+    ProfileView(user: User.MOCK_USER)
 }
